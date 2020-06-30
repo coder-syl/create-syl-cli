@@ -1,0 +1,40 @@
+{
+    "name": "create-syl-vue",
+    "version": "1.0.0",
+    "description": "syl-vue-cli",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "babel src -d dist",
+        "watch": "npm run compile -- --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/coder-syl/create-syl-cli.git"
+    },
+    "keywords": [
+        "cli"
+    ],
+    "author": "syl",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/coder-syl/create-syl-cli/issues"
+    },
+    "homepage": "https://github.com/coder-syl/create-syl-cli#readme",
+    "bin": {
+        "create-syl-template": "./bin/cmd"
+    },
+    "dependencies": {
+        "@babel/core": "^7.0.0",
+        "babel-cli": "^6.26.0",
+        "babel-loader": "7",
+        "babel-preset-env": "^1.7.0",
+        "chalk": "^4.0.0",
+        "commander": "^5.1.0",
+        "download-git-repo": "^3.0.2",
+        "inquirer": "^7.1.0",
+        "log-symbols": "^4.0.0",
+        "ora": "^4.0.4",
+        "progress": "^2.0.3"
+    }
+}
